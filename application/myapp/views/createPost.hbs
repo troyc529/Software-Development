@@ -1,0 +1,43 @@
+<body>
+        <div class="createPost-box">
+
+                <form id="form" class="form-grid-postimage" method="POST" enctype="multipart/form-data"
+                        action='/posts/createPost'>
+
+                        <h1 id="creatPost-heade">Create Post</h1>
+                        <p>Title:</p>
+                        <label id="post-title"><input class="creatPost-input-top" type="text" id="postTitleInput"
+                                        name="title" required> </label>
+                        <p>Description:</p>
+                        <label id="post-description"><input class="creatPost-input-top" type="text"
+                                        id="postDescriptionInput" name="description" required> </label>
+
+                        <p>Price:</p>
+                        <label id="asking-price"><input class="creatPost-input-top" type="number" id="asking-pricet"
+                                        placeholder="$$$" name="Price" min="0" required>
+                        </label>
+                        </br>
+
+                        <label for="categories">Choose a category:</label>
+                        <select name="category" id="category" required>
+                                <option value="eBook">eBook</option>
+                                <option value="Video">Video</option>
+                                <option value="Image">Image</option>
+                                <option value="Audio">Audio</option>
+                        </select>
+
+                        <label id="post-Image"></br> <input class="cratePost-upload-img" type="file" id="postImage"
+                                        name="uploadImage" required></label>
+                        </br>
+
+                        <label id="tos">New Posts can take up to 24 hours to be approved</label><br>
+                        </br>
+
+                        <div class="creatPost-form-btn">
+                                <button class="creatPost-btn" type="submit" id="submitButton">Create Post</button>
+                                <a class="creatPost-btn" id="cancelButton" href="/createPost">CANCEL</a>
+                        </div>
+
+                </form>
+        </div>
+</body>

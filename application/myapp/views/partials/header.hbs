@@ -1,0 +1,49 @@
+<header>
+    <div class="mainNav">
+        <div class="nav-wrapper">
+
+            <div class="nav-left">
+                <div id="nav-logo">
+                    <a href="/"><img id="nav-logo-pic" src="/images/logo.png"></a>
+                </div>
+            </div>
+
+
+            <div class="nav-middle">
+                <form class="form-vp">
+                    <div class="nav-searchBar">
+                        <select id="category-navbar" class="category-vp" name="category">
+                            <option value="All" selected>All</option>
+                            <option value="eBook">eBook</option>
+                            <option value="Image">Image</option>
+                            <option value="Video">Video</option>
+                            <option value="Audio">Audio</option>
+                        </select>
+                        <input class="search-vp" id="search-navbar" type="text" name="search" value=""
+                            placeholder="Search..." data-search>
+
+                        <button id="search-button" class="search-button-vp" type="button"
+                            onclick="executeSearchNavbar()">Search</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="nav-right">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-links">
+                    <li id="nav-profile"><a href="#" onclick="login_redirect()">Profile</a></li>
+                    <li id="nav-about"><a href="/About">About</a></li>
+                    <li id="nav-createPost"><a href="/createPost">Create Post</a></li>
+                    <li id="nav-login"><a href="/Login">Login</a></li>
+                    <li id="nav-logout"><a href="#" onclick="logout_frontend()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/public/javascript/login_frontend.js" onload="profile_display()"></script>
+</header>

@@ -1,0 +1,36 @@
+<body class="product-info-body" onload="displayProductInfo(), messageFetch()">
+    <div class="product-container">
+        <div class="product-content">
+            <img id="product-img" class="product-img" src="" width="300px">
+            <div class="product-text">
+                <span class="bg-user">
+                    <p>Your post: </p>
+                    <p id="product-name"></p>
+                </span>
+
+                <span class="product-category">
+                    <h1 id="product-category"></h1>
+                </span>
+                <span class="product-description">
+                    <p>Description:
+                    <p id="product-description"></p>
+                    </p>
+                </span>
+
+                <div class="product-price-btn">
+                    <span class="product-price">
+                        <p>Price:
+                        <p id="product-price"></p>
+                        </p>
+                    </span>
+
+                    <a class="cart-delete-post" href="#" onclick="deletePost()"><i class="cart-icon ion"
+                            id="cart-delete-post"></i>Delete the Post</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <dir class="board" id="user-content"></dir>
+</body>
+<script src="/public/javascript/frontendjs.js"></script>

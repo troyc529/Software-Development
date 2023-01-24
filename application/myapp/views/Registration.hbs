@@ -1,0 +1,22 @@
+<body>
+    <div class="login-reg-container">
+        <form id="reg-form" class="login-reg-form">
+            <h2 class="login-reg-h2">Registration</h2>
+            <p>Email:</p>
+            <input id="email-input-new" type="email" class="login-reg-input" placeholder="SFSU email">
+            <p>Password:</p>
+
+            <input id="pass-input-new" type="password" class="login-reg-input" placeholder="Must be at least 6 characters">
+            <p>Confirm your Password:</p>
+
+            <input id="pass-input-confirm" type="password" class="login-reg-input">
+            <label for="tos-input-confirm" class="reg-label">
+                <input id="tos-input-confirm" type="checkbox" required>
+                By checking the box, you agree to our
+                <a href="#" id="tos-link">TOS and Privacy Rules</a>
+            </label>
+            <button id="reg-btn" class="login-reg-submit" type="button" onclick="registerUser()">Submit</button>
+        </form>
+    </div>
+    <script src="/public/javascript/login_frontend.js"></script>
+</body>

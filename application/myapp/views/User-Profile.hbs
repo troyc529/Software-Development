@@ -1,0 +1,53 @@
+{{!-- **
+* Team 2
+* CSC 648
+* Description: handelbars page to display user info and
+allow users to edit their info. They can also view the products
+they have posted
+*/ --}}
+
+<body onload="getUserPosts()" class="userProfile-body">
+    <h3 class="Page-Name">Profile</h3>
+    <div class="values">
+        <div class="val-box">
+            <div class="card-backing">
+                <h3 id="display-name">{{email}}</h3>
+                <span id="date-created">{{date-created}}</span>
+            </div>
+        </div>
+        <div class="val-box">
+            <div class="card-backing">
+                <h3>Change Password</h3>
+                <button id="password-button" type = "button" onclick="(function(){window.location.href = '/change-password'})()">Change</button>
+            </div>
+        </div>
+        <div class="val-box">
+            <div class="card-backing">
+                <h3>Change Email</h3>
+                <button id="password-button" type = "button" onclick="(function(){window.location.href = '/change-email'})()">Change</button>
+            </div>
+        </div>
+        {{!-- <div class="val-box">
+            <i class="users"></i>
+            <div class="card-backing">
+                <li id="favorites-link"><a style="color:white" href="/favorites">Favorites</a></li>
+            </div> --}}
+    </div>
+    </div>
+    <dir class="board" id="user-content">
+        <table width="100%">
+        <thead>
+            <tr>
+                <td>Product Title</td>
+                <td>Date Posted</td>
+                <td>Price</td>
+                <td>View</td>
+            </tr>
+        </thead>
+        <tbody id="user-post-body">
+            
+        </tbody>
+    </table>
+    </dir>
+</body>
+<script src="/public/javascript/frontendjs.js"></script>

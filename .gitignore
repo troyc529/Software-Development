@@ -1,0 +1,10 @@
+
+
+application/myapp/.env
+.DS_Store
+application/.DS_Store
+application/myapp/node_modules
+
+log.txt
+application/myapp/.env
+application/myapp/.env
